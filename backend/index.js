@@ -2,7 +2,7 @@
 const express = require('express');
 
 const userRouter = require('./routers/userRouter');
-const videoRouter = require('./routers/videoRouter');
+const musicRouter = require('./routers/musicRouter');
 const cors = require('cors');
 
 const app = express();
@@ -19,7 +19,7 @@ app.use(cors( {
 } ));
 
 app.use('/user', userRouter);
-app.use('/video', videoRouter);
+app.use('/music', musicRouter);
 
 // processing the request
 
